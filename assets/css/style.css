@@ -1,0 +1,390 @@
+body {
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: hamza;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: hamzabold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+h1,
+h2,
+h3 {
+    font-family: hamzabold !important;
+}
+
+.navbar {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+
+.navbar .navbar-collapse {
+    justify-content: end;
+}
+
+.navbar li a {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    /* padding: 5px 15px; */
+    opacity: .7;
+    text-transform: uppercase;
+    color: white;
+}
+
+.nav-item {
+    padding: 5px 15px;
+    font-size: 12px;
+
+    font-style: sans-serif;
+}
+
+.banner {
+    background-image: url(../images/MightySoft.jpg);
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannerContent h1 {
+    font-size: 54px;
+    line-height: 56px;
+    font-weight: 700;
+    opacity: .9;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .3);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.bannerContent {
+    color: white;
+    z-index: 0;
+}
+
+
+.bannerContent .btn-outline-primary {
+    border: 1px solid white;
+    border-radius: 0px;
+    color: white;
+    padding: 10px 50px;
+    position: relative;
+}
+
+.bannerContent .btn-outline-primary:hover {
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid white !important;
+    transition: all 0.8s;
+
+}
+
+.bannerContent .btn-outline-primary::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background-color: white;
+    top: 50%;
+    left: -15px;
+}
+
+.bannerContent .btn-outline-primary:hover::before {
+    background-color: black;
+}
+
+.bannerContent .btn-outline-primary::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background-color: white;
+    top: 50%;
+    right: -15px;
+}
+
+.bannerContent .btn-outline-primary:hover::after {
+    background-color: black;
+}
+
+.bannerContent span {
+    font-family: roboto, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 4.5px;
+    font-weight: 300;
+    opacity: .9;
+    color: white;
+}
+
+.bannerContent p {
+
+    font-family: roboto, sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    color: white;
+    opacity: .9;
+}
+
+
+.content {
+    text-align: center;
+    margin-top: 100px;
+    /* font-family: hamza; */
+}
+
+.aboutus p {
+    width: 80%;
+    margin: 0 auto;
+    color: #7e7d7d;
+}
+
+.product img {
+    width: 100%;
+}
+
+.product h1 {
+    margin-bottom: 50px;
+}
+
+.product p {
+    margin-bottom: 12px;
+    color: gray;
+    color: #7e7d7d;
+}
+
+.matressContent {
+    width: 80%;
+    margin: 0 auto;
+    line-height: 30px;
+    position: relative;
+}
+
+.matressContent span::after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    left: -75px;
+    top: 15px;
+    height: 1px;
+    background-color: black;
+
+}
+
+.matressContentEnd {
+    position: relative;
+}
+
+.matressContentEnd span::after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    left: 101%;
+    top: 15px;
+    height: 1px;
+    background-color: black;
+}
+
+.matressContent p {
+    font-family: roboto, sans-serif;
+    color: #7e7d7d;
+}
+
+.content span {
+    letter-spacing: 4.5px;
+}
+
+.product {
+    padding: 40px 0px;
+
+}
+
+.content1 {
+    padding: 70px 0px;
+    text-align: center;
+}
+
+.content1 h2 {
+    margin-top: 18px;
+    /* margin-bottom: -20px; */
+    font-size: 40px;
+    letter-spacing: .9px;
+}
+
+.content1 span {
+    letter-spacing: 4.5px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.aboutus span {
+    font-weight: 300;
+}
+
+.galleryImg img {
+    width: 100%;
+    height: auto;
+}
+
+.galleryImg .img-wrap {
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.galleryImg img:hover {
+    transform: scale(1.18);
+    transition: 500ms
+}
+
+.content2 {
+    margin-top: 80px;
+}
+
+.content2 span {
+    letter-spacing: 4.5px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.content2 h2 {
+    margin-top: 10px;
+    font-size: 40px;
+    letter-spacing: .9px;
+}
+
+.keyContent h4 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.keyContent {
+    padding: 65px 0px;
+}
+
+.keyContent p {
+    text-align: left;
+    margin-top: 17px;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #7e7d7d;
+}
+
+.border-left {
+    border-left: 1px solid rgba(0, 0, 0, 0.281);
+    padding-left: 10px;
+}
+
+.keyContent .border-left p:hover {
+    background-color: rgba(211, 211, 211, 0.459);
+    transition: all 1s;
+}
+
+
+
+.footer {
+    background-image: url(../images/footer.jpg);
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.overlay2 {
+    background-color: rgba(0, 0, 0, 0.712);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+hr {
+    color: white;
+}
+
+.footerContent p {
+    align-items: center;
+    margin-top: 70px;
+    font-family: roboto, sans-serif;
+    font-size: 13px;
+    line-height: 26px;
+    font-weight: 400;
+    color: white;
+    max-width: 470px;
+    z-index: 0;
+}
+
+.footerContact {
+    font-size: 13px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: end;
+    color: white;
+}
+
+.footerContact h6 {
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 4.5px;
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+    margin-bottom: 37px;
+    font-size: 14px;
+}
+
+.footerCopyRight {
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: white;
+    margin-top: 40px;
+}
+
+.copyRight {
+    margin-bottom: 0;
+}
+
+.socialIcons {
+    text-align: end;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.socialIcons i {
+    font-size: 13px;
+    border: 1px solid white;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
